@@ -2,6 +2,6 @@ import requests
 import json
 
 
-payload = {'name' : 'Milla', 'job' : 'QATesting'}
-r = requests.post('https://reqres.in/api/users', json=payload)
+payload = {'PhoneNumber': '+375297521744'}
+r = requests.post('https://dev.dsync.app:6443/api/Identity/getOTP', json=payload)
 print(r.text)
